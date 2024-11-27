@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class=" text-white d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 ">
+                <div class="card group text-white mb-3 d-flex" id="loginForm">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Smart Login System</h1>
+                        <input type="email" class="form-control my-3 " placeholder="Enter your email" id="loginEmail">
+                        <input type="password" class="form-control my-3" placeholder="Enter your password" id="loginPass">
+                        <button class="btn btn-outline-primary btn-block w-100 login-btn">Login</button>
+                        <p class="text-center mt-3">Don't have an account? <a href="#" id="showSignup" class="text-white">Sign Up</a></p>
+                    </div>
+                </div>
+
+                <div class="card group text-white mb-3 d-none" id="signupForm">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Smart Login System</h1>
+                        <input type="text" class="form-control my-3" placeholder="Enter your name" id="signupName">
+                        <input type="email" class="form-control my-3" placeholder="Enter your email" id="signupEmail">
+                        <input type="password" class="form-control my-3" placeholder="Enter password" id="signupPass">
+                        <button class="btn btn-outline-primary btn-block w-100 login-btn">Sign Up</button>
+                        <p class="text-center mt-3">You have an account? <a href="#" id="showLogin" class="text-white">Signin</a></p>
+                    </div>
+                </div>
+
+                <div class="card group text-white mb-3 d-none" id="homePage">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2>SMART LOGIN</h2>
+                            <button class="btn btn-outline-warning" id="logoutBtn">Logout</button>
+                        </div>
+                        <div class="welcome-message text-center mt-4">
+                            <h1>Welcome <span id="userName"></span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

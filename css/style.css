@@ -1,0 +1,23 @@
+body{
+    background-color: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 10px;
+}
+#loginForm{
+    background-color: #24353f;
+}
+#signupForm{
+    background-color: #24353f;
+}
+#homePage{
+    background-color: #24353f;
+}
+.group {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
